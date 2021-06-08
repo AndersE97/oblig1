@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
+</head>
+
+<body>
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+    <script scr="Oblig.js"></script>
+
+    <script>
+        function updateView() { }
+        let guessNumber;
+        let points;
+
+        QUnit.test('startGame Test', function (assert) {
+            guessNumber = null;
+            points = 0;
+
+            startGame();
+            assert.equal(guessNumber = null);
+            assert.equal(points = 0);
+        });
+    </script>
+
+</body>
+
+</html>
